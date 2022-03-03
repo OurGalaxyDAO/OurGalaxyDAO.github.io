@@ -14,22 +14,24 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">OurGalaxyDAO</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Our Mission</a>
-								<ul>
-									<li><a href="mint.html">Mint Now</a></li>
-									<li><a href="faq.html">Backstory</a></li>
-									<li><a href="mint.html">Opensea</a></li>
-									<li><a href="mint.html">LooksRare</a></li>
-								</ul>
-							</li>
-							<li><a href="https://linktr.ee/mintourgalaxy" target="_blank">LinkTree</a></li>
-						</ul>
+			<header id="header">
+				<h1 id="logo"><a href="index.html"><b>OurGalaxyDAO</b></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="#">Mint Now</a>
+							<ul>
+								<li><a href="mint.html">Mint Guide</a></li>
+								<li><a href="#">Opensea</a></li>
+								<li><a href="#">LooksRare</a></li>
+							</ul>
+						</li>
+									
+						<li><a href="https://snapshot.org/#/ourgalaxy.eth/about" target="_blank">Snapshot Vote</a></li>
+						<li><a href="faq.html">Backstory</a></li>
+						<li><a href="https://linktr.ee/mintourgalaxy" target="_blank">LinkTree</a></li>
+					</ul>
 					</nav>
 				</header>
 
@@ -55,7 +57,7 @@
 								<p>This exploration could not be completed without the born of all Galaxians. That's why minters get <i></i><strong>Instant 25% Cash Royalties From Next Sales</strong></i>, executed by our <em>Low Gas Smart Contract</em> to save gas fees.
 								Imagine you are the 1st Minter who minted the 1st <sup>NFT</sup> with 0.001 $ETH. You will instantly get 0.0005 $ETH (50% Rebated!) when the 2nd <sup>NFT</sup> is minted with 0.002 $ETH.
 								Our Smart Contract only allows 1 mint per transaction. This allows rewards for Galaxian Pioneers with multiple mints get all the Royalties upon each mint.
-								To understand that mechanism in details, visit the code here: <code>setCost(cost+1); _mintLoop(msg.sender, _mintAmount); address payable previousOwnerAddress = payable(ownerOf(supply.current()));	(bool success, ) = payable(previousOwnerAddress).call{value: msg.value * 25 / 100}(""); require(success);</code>, deployed in Ethereum as ERC721.</p>
+								To understand that mechanism in details, visit the code here: <code>uint amount = msg.value * 25 / 100; _mintLoop(msg.sender, _mintAmount); payable(previousOwnerAddress).transfer(amount);previousOwnerAddress = msg.sender;</code>, deployed in Ethereum as ERC721.</p>
 								<p><section class="image fit"><div class="image"><img src="images/royalties.png" alt="" /></div></p></section>
 								<hr />
 									<h3>"Price Inflation" Strategy</h3>
@@ -66,12 +68,12 @@
 									<hr />
 								<h3>Last Minter Reward</h3>
 									<p>What is the <i>incentive</i> for the <strong>last Galaxian Pioneer</strong>?</p> An ~2x immediate ROI💥 of 7.4 $ETH would be given to the Last Minter.
-									<p>Without the Last Galaxian Pioneer, OurGalaxy Phase 1 would not be seen by anyone. The Treasury would contribute 1% of the Total Sales Revenue to the Last Minter.</p>
+									<p>Without the Last Galaxian Pioneer, OurGalaxy Phase 1 would not be seen by anyone. The Treasury would contribute 0.1% of the Total Sales Revenue to the Last Minter.</p>
 									<p>Still confused with the mathematics?? No worries, <a href="https://docs.google.com/spreadsheets/d/155JXI-csYr96IThR77pRhFHlfrrN4glrpvBF_ugq-4E/edit?usp=sharing" target="_blank">an interactive spreadsheet</a> is prepared for you to understand our Tokenomics:)</p>
 									<p><section class="image fit"><div class="image"><img src="images/last.png" alt="" /></div></p></section>
 									<hr />
 								<header>
-									<h2>OurGalaxy.DAO</h2>
+									<h2>OurGalaxyDAO</h2>
 									<p>Why are we "Revolutionizing" NFT minting?</p>
 								</header>
 								<p>We Believe Minting Means We Are Kick Starting A Civilization. A Civilization means we are together painting a vision. </p>
@@ -95,7 +97,7 @@
 								<blockquote>Game theory is a theoretical framework for conceiving social situations among competing players. In some respects, game theory is the science of strategy, or at least the optimal decision-making of independent and competing actors in a strategic setting. - Investopedia</blockquote>
 								<hr />
 								<h2>Founder's Rewards</h2>
-								<p>The Founder <i>COULD NOT</i> purchase any GALAXIAN with the Treasury Funds. I chose to funded back from the 20% Initial Sales Smart Contract to cover all the costs, e.g. ENS Domain, Website Hosting, Gas Fees... This could further prevent the centralization of votes in my hand as well.</p>
+								<p>The Founder <i>COULD NOT</i> purchase any GALAXIAN with the Treasury Funds. I chose to be funded back from the 20% Initial Sales Smart Contract to cover all the costs, e.g. Gas Fees, ENS Domain, Arweave Storage... This could further prevent the centralization of votes in my hand as well.</p>
 								<p>You could follow along my story since Day 1 of my unemployment to establishment of OurGalaxy from <a href="https://twitter.com/MintOurGalaxy/status/1493161934002085890?s=20&t=gShoYcKa9ZlqLqzW7qm3LQ" target="_blank"> Twitter</a> / <a href="https://www.instagram.com/p/CZ9A9KMPwXt/?utm_medium=share_sheet" target="_blank">Instagram</a> .</p>
 					
 					<p><section class="image fit"><div class="image"><img src="images/bg1.jpg" alt="" />
@@ -112,6 +114,7 @@
 					<li><a href="https://www.instagram.com/mintourgalaxy/"  target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="https://discord.gg/QsHEJ9bPrt" target="_blank" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
 					<li><a href="mailto:admin@MintOurGalaxy.art"  target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://snapshot.org/#/ourgalaxy.eth/about"  target="_blank" class="icon solid fa-bolt"><span class="label">Snapshot</span></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>See You In OurGalaxy.</li>
